@@ -3,10 +3,12 @@ var folderAbout = document.querySelector(".folder-about")
 folderAbout.addEventListener("click", () => {
     const aboutContent = new WinBox({
         title : "About Me",
-        background : "#1E2323",
+        background : "#4eb5fa",
         url : "/pages/aboutFileManager.html",
-        top : 30,
-        left :30,
+        x: "center",
+        y: "center",
+        width: "80%",
+        height: "50%"
     })
 })
 
