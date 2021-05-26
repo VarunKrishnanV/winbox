@@ -1,0 +1,68 @@
+@import url(./reset.css);
+
+body{
+    background: url(../img/desktop_bg.png) no-repeat right center fixed;
+    background-size: cover; 
+  }
+  
+.desktop{
+    display: flex;
+}
+
+.desktop__folders{
+    padding: 5px;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90vh;
+    .folder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        padding: 5px;
+        &:hover{
+            background-color: #4eb5fa;
+            border: 1px solid rgb(0, 204, 255);
+        }
+        &__img{
+            width: 2em;
+        }
+        &__name{
+            font-size: .8em;
+            font-weight: 200;
+            color: white;
+            text-shadow: 1px 1px black;
+        }
+    }
+}
+
+.desktop__taskbar{
+    height: max-content;
+    padding: 0.5em;
+    background-color: #1E2323;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .windows__icon{
+        img{
+            width: 20px;
+        }
+    }
+    .taskbar__right{
+        display: flex;
+        h3{
+            padding: .3em;
+            font-size: 1em;
+            font-family: 'SegoeBold', 'Times New Roman', Times, serif;
+        }
+    }   
+}

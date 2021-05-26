@@ -1,0 +1,176 @@
+@import url(./reset.css);
+.explorer img {
+  width: 20px;
+}
+
+.explorer .arrow__right {
+  height: 10px;
+  width: 5px;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.explorer .folder__icon {
+  height: 15px;
+  width: auto;
+}
+
+.explorer .folder {
+  height: 20px;
+}
+
+.explorer__addressbar {
+  border-bottom: 1px solid #989898;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.explorer__addressbar .folder__icon {
+  width: 20px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.explorer__addressbar .folder__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.explorer__addressbar .address {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 30px;
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0;
+  line-height: 25px;
+  margin-left: 10px;
+}
+
+.explorer__sidebar {
+  padding-left: 20px;
+  width: 200px;
+  background-color: #EFEFEF;
+  height: 95vh;
+}
+
+.sidebar__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 25px max-content;
+      grid-template-columns: 20px 25px -webkit-max-content;
+      grid-template-columns: 20px 25px max-content;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.child .sidebar__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25px max-content;
+      grid-template-columns: 25px -webkit-max-content;
+      grid-template-columns: 25px max-content;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.child {
+  position: relative;
+  left: 40px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.rotateArrow {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.desktop__folders {
+  padding: 5px;
+  margin-left: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.desktop__folders .folder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 5px;
+  margin: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.desktop__folders .folder:hover {
+  background-color: rgba(124, 203, 255, 0.212);
+}
+
+.desktop__folders .folder__img {
+  width: 2em;
+  height: auto;
+}
+
+.desktop__folders .folder__name {
+  font-size: .8em;
+  font-weight: 200;
+  color: #000;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=aboutFileManager.css.map */

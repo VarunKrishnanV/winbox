@@ -1,0 +1,103 @@
+@import url(./reset.css);
+body {
+  background: url(../img/desktop_bg.png) no-repeat right center fixed;
+  background-size: cover;
+}
+
+.desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.desktop__folders {
+  padding: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 90vh;
+}
+
+.desktop__folders .folder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 5px;
+}
+
+.desktop__folders .folder:hover {
+  background-color: #4eb5fa;
+  border: 1px solid #00ccff;
+}
+
+.desktop__folders .folder__img {
+  width: 2em;
+}
+
+.desktop__folders .folder__name {
+  font-size: .8em;
+  font-weight: 200;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.desktop__taskbar {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0.5em;
+  background-color: #1E2323;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.desktop__taskbar .windows__icon img {
+  width: 20px;
+}
+
+.desktop__taskbar .taskbar__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.desktop__taskbar .taskbar__right h3 {
+  padding: .3em;
+  font-size: 1em;
+  font-family: 'SegoeBold', 'Times New Roman', Times, serif;
+}
+/*# sourceMappingURL=style.css.map */
