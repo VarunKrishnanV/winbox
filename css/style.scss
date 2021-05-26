@@ -2,7 +2,11 @@
 
 body{
     background: url(../img/desktop_bg.png) no-repeat right center fixed;
-    background-size: cover; 
+    background-size: cover;
+    @media screen and (max-width : 720px) {
+        background: url(../img/mobile_bg.jpg) no-repeat right center fixed;
+        background-size: cover;   
+    } 
   }
   
 .desktop{
