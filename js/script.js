@@ -4,7 +4,7 @@ folderAbout.addEventListener("click", () => {
     const aboutContent = new WinBox({
         title : "About Me",
         background : "#1E2323",
-        url : "../pages/aboutFileManager.html",
+        url : "/pages/aboutFileManager.html",
         top : 30,
         left :30,
     })
