@@ -5,17 +5,13 @@ folderAbout.addEventListener("click", () => {
         title : "About Me",
         background : "#4eb5fa",
         url : "/pages/aboutFileManager.html",
-        x: "center",
-        y: "center",
-        width: "80%",
-        height: "50%"
+        // x: "center",
+        // y: "center",
+        // width: "80%",
+        // height: "50%"
+        width: "90%",
+        height: "80%"
     })
 })
 
-// var quickArrow = document.querySelector(".quick__arrow");
-// var child = document.querySelector(".child")
 
-// quickArrow.addEventListener("click", ()=>{
-//     child.classList.toggle("show")
-//     quickArrow.classList.toggle("rotateArrow")
-// })
