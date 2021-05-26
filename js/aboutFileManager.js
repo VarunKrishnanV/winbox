@@ -12,8 +12,8 @@ aboutDoc.addEventListener("click", () => {
         title : "about.txt",
         background : "#0567D4",
         url : "/pages/about.html",
-        // x: "top",
-        // y: "right",
+        x: "20",
+        y: "20",
         width: "80%",
         height: "80%",
         onfocus: function(){
